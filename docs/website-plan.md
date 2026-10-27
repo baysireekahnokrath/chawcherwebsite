@@ -70,6 +70,15 @@
 | จ่ายเงินไทย (PromptPay, ผ่อน) | ✅ ปลั๊กอิน 2C2P/Omise | ⚠️ gateway ไทย + ค่าธรรมเนียมเพิ่ม (ต้องเช็กอัตรา) | ❌ จำกัด | ✅ ต่อ API เอง |
 | ค่าใช้จ่ายประจำ | ต่ำ | กลาง (รายเดือน + ค่าธรรมเนียม) | กลาง | ต่ำ–กลาง |
 
+### F1. ค่าโฮสต์ ถ้าเลือก WordPress (เช็กราคา 2026-10-27)
+
+| ทางเลือก | ต่อเดือน | หมายเหตุ |
+|---|---|---|
+| **HostNeverDie เดิม + ทำ staging/Git เอง** | ~฿250 (จ่ายแล้วถึง ส.ค. 2027) | 2 โดเมน · 20 ฐานข้อมูล → ตั้ง staging.chawcher.com ได้ · deploy โค้ดด้วย GitHub Actions ผ่าน FTP/SSH · ต้องถาม support เรื่อง SSH/backup |
+| WordPress.com Business 3 ปี | ~฿583 (฿20,988 จ่ายครั้งเดียว) | staging กดปุ่มเดียว · GitHub Deployments · backup real-time |
+| WordPress.com Business 1 ปี | ~฿833 (฿9,999/ปี) | เหมือนข้างบน |
+| WordPress.com Personal/Premium | ฿130–279 | ไม่มี staging, GitHub, SFTP · ไม่แนะนำ |
+
 ### F2. กฎ ถ้าเลือก WordPress
 1. ไม่ใช้ page builder (Elementor) · ใช้ block editor + patterns ของธีมเท่านั้น
 2. ไม่ import demo ธีม
